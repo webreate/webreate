@@ -1,6 +1,6 @@
 import React from "react";
 
-const ourteam = () => {
+const Ourteam = () => {
   return (
     <div className="ourteam-main">
       <div className="oursales">
@@ -10,7 +10,7 @@ const ourteam = () => {
       <div className="oursales-team">
         <div className="teamsales">
           <div className="teamsales-img">
-            <img src="avatar1.png" />
+            <img src="avatar1.png" alt="" />
             <p>Henry</p>
           </div>
           <div className="teamsales-text">
@@ -27,7 +27,7 @@ const ourteam = () => {
         </div>
         <div className="teamsales">
           <div className="teamsales-img">
-            <img src="avatar1.png" />
+            <img src="avatar1.png" alt="" />
             <p>Henry</p>
           </div>
           <div className="teamsales-text">
@@ -44,7 +44,7 @@ const ourteam = () => {
         </div>
         <div className="teamsales">
           <div className="teamsales-img">
-            <img src="Group 23.png" />
+            <img src="Group 23.png" alt="" />
             <p>Henry</p>
           </div>
           <div className="teamsales-text">
@@ -80,4 +80,4 @@ const ourteam = () => {
   );
 };
 
-export default ourteam;
+export default Ourteam;

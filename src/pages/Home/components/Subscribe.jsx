@@ -1,6 +1,6 @@
 import React from "react";
 
-const subscribe = () => {
+const Subscribe = () => {
   return (
     <div className="subscribe">
       <div className="subscribe-main">
@@ -50,4 +50,4 @@ const subscribe = () => {
   );
 };
 
-export default subscribe;
+export default Subscribe;
