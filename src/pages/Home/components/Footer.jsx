@@ -1,6 +1,6 @@
 import React from "react";
 
-const footer = () => {
+const Footer = () => {
   return (
     <div className="footer">
       <div className="Address">
@@ -21,22 +21,22 @@ const footer = () => {
         <h2>FOLLOW US ON</h2>
         <div className="icon-imgs">
           <div className="socialmedia">
-            <img src="instagram.png" alt="instagram" />
+            <img className="insta" src="instagram.png" alt="instagram" />
           </div>
           <div className="socialmedia">
-            <img src="yt.png" alt="yt" />
+            <img className="youtube" src="yt.png" alt="yt" />
           </div>
           <div className="socialmedia">
-            <img src="fb.png" alt="fb" />
+            <img className="facebook" src="fb.png" alt="fb" />
           </div>
           <div className="socialmedia">
-            <img src="whatsapp.png" alt="whatsapp" />
+            <img className="whatsapp" src="whatsapp.png" alt="whatsapp" />
           </div>
           <div className="socialmedia">
-            <img src="linkedin.png" alt="linkedin" />
+            <img className="linkedin" src="linkedin.png" alt="linkedin" />
           </div>
           <div className="socialmedia">
-            <img src="twitter.png" alt="twitter" />
+            <img className="twitter" src="twitter.png" alt="twitter" />
           </div>
         </div>
         <h2>COMPANY</h2>
@@ -50,4 +50,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

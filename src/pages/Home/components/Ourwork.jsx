@@ -1,6 +1,6 @@
 import React from "react";
 
-const ourwork = () => {
+const Ourwork = () => {
   return (
     <div className="ourwork-section">
       <div className="ourwork">
@@ -62,4 +62,4 @@ const ourwork = () => {
   );
 };
 
-export default ourwork;
+export default Ourwork;

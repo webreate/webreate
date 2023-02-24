@@ -1,7 +1,14 @@
 import React from "react";
-import "./style.css";
+import Ourservice from "../components/Ourservice";
+import Aboutus from "../components/Aboutus";
+import Ourwork from "../components/Ourwork";
+import Ourteam from "../components/Ourteam";
+import Subscribe from "../components/Subscribe";
+import Footer from "../components/Footer";
 
-const home = () => {
+import "../styles/Home.scss";
+
+const Home = () => {
   return (
     <>
       <div className="top-bar">
@@ -25,7 +32,7 @@ const home = () => {
           <div className="image2">
             <img src="Group 502.png" alt="" />
             <img className="eimage" src="Group 503.png" alt="" />
-            <img className="optimizeimg" src="OPTIMISE.png" />
+            <img className="optimizeimg" src="OPTIMISE.png" alt="" />
           </div>
 
           <p className="hero-p">
@@ -36,11 +43,17 @@ const home = () => {
         </div>
         <div className="w_logo">
           {" "}
-          <img className="wlogo" src="Path 12289.png" />
+          <img className="wlogo" src="Path 12289.png" alt="" />
         </div>
       </div>
+      <Ourservice />
+      <Aboutus />
+      <Ourwork />
+      <Ourteam />
+      <Subscribe />
+      <Footer />
     </>
   );
 };
 
-export default home;
+export default Home;

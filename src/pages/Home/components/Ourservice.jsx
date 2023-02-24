@@ -1,9 +1,9 @@
 import React from "react";
 
-const ourservice = () => {
+const Ourservice = () => {
   return (
     <div className="ourservice">
-      <div>
+      <div className="ourServiceContent">
         <p className="ourservicep">
           We provide an all in one support to grow your Idea at the maximal
           potential.
@@ -14,19 +14,19 @@ const ourservice = () => {
         <div className="service-section">
           <div className="icons-5">
             <div className="icons-5img">
-              <img src="Group 15156.png" />
+              <img src="Group 15156.png" alt="" />
             </div>
             <div className="icons-5img">
-              <img src="Group 15158.png" />
+              <img src="Group 15158.png" alt="" />
             </div>
             <div className="icons-5img">
-              <img src="Group 15157.png" />
+              <img src="Group 15157.png" alt="" />
             </div>
             <div className="icons-5img">
-              <img src="Group 15159.png" />
+              <img src="Group 15159.png" alt="" />
             </div>
             <div className="icons-5img">
-              <img src="Group 15160.png" />
+              <img src="Group 15160.png" alt="" />
             </div>
           </div>
           <p className="ourservice-p">Webreate- A One stop solution.</p>
@@ -46,4 +46,4 @@ const ourservice = () => {
   );
 };
 
-export default ourservice;
+export default Ourservice;
