@@ -30,7 +30,7 @@
 .menu-btn {
   display: flex;
   flex: row;
-  width: 20%;
+  // width: 20%;
   justify-content: space-between;
   align-items: center;
 }
@@ -41,6 +41,7 @@
   border-radius: 5px;
   background: transparent;
   border: 1px solid $white;
+  display: none;
   cursor: pointer;
   margin-right: 20px;
   &:hover {
@@ -51,7 +52,7 @@
 .hero-section {
   width: 100%;
   display: flex;
-  height: 90vh;
+  // height: 90vh;
   background-color: $black;
   color: $white;
   .image2 {
@@ -94,7 +95,7 @@
     font-size: 19.2px;
   }
   .btn-1 {
-    width: 30%;
+    width: 20%;
     padding: 10px 30px;
     color: $orange;
     font-size: 17px;
@@ -118,6 +119,7 @@
 }
 .wlogo {
   width: 100%;
+  padding: 30px;
 }
 .ourservicep {
   margin-top: 30px;
@@ -256,6 +258,7 @@
     font-size: 20px;
     margin-top: 10px;
     color: $white;
+    margin-bottom: 20px;
   }
 }
 .ourwork-success {
@@ -365,7 +368,7 @@ h3 {
   padding: 20px 20px;
 }
 .teamimg {
-  width: 350px;
+  // width: 350px;
   height: 350px;
 }
 .ourteam-txt {
@@ -406,7 +409,7 @@ h3 {
 .subscribe-main {
   color: $orange;
   width: 60%;
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   padding: 30px 20px;
   flex-direction: column;
@@ -447,6 +450,7 @@ h3 {
   width: 100%;
 }
 .subscribe-form-head {
+  margin-bottom: 20px;
   h3 {
     width: 70%;
     font-size: 20px;
@@ -462,7 +466,7 @@ input {
   color: $gray;
   border-radius: 5px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 select {
   padding: 15px;
@@ -563,28 +567,28 @@ textarea {
     );
     border-radius: 5px;
     // height: 30px;
-    padding: 3px;
+    padding: 5px;
   }
   .whatsapp:hover {
     background: #25d366;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
   }
 
   .facebook:hover {
     background: #3b5998;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
   }
   .twitter:hover {
     background: #00acee;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
   }
   .linkedin:hover {
     background: #0a66c2;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
   }
 
   .youtube:hover {
@@ -592,6 +596,47 @@ textarea {
     border-radius: 5px;
     width: 40px;
     text-align: center;
-    padding: 3px;
+    padding: 5px;
+    width: auto;
   }
 }
+
+.ourwork .icon-5 {
+  display: flex;
+  flex-direction: row;
+  // justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  margin-right: -20px;
+  gap: 20px;
+  justify-content: center;
+}
+.icon-5img {
+  display: flex;
+  border-radius: 5px;
+  height: 150px;
+  width: 15%;
+  background-color: var(--black);
+  box-shadow: 0 0 10px #707070;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .icon5-text {
+    color: $orange;
+    font-size: 15px;
+  }
+}
+
+// .icons-5img {
+//   display: flex;
+//   border-radius: 5px;
+//   width: 80px;
+//   height: 80px;
+//   background-color: $black;
+//   box-shadow: 0 0 10px #707070;
+//   img {
+//     padding: 15px;
+//     width: 100%;
+//   }
+// }
