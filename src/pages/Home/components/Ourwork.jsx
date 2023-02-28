@@ -9,11 +9,43 @@ const Ourwork = () => {
           An Idea is the first step towards the success and we provide an all in
           one support to grow your Idea at its maximal height.
         </p>
+        {/* <div className="boxes">
+          <div className="box1">
+            <h2>Mehandi Hub</h2>
+            <hr />
+          </div>
+          <div className="box2"></div>
+          <div className="box3"></div>
+          <div className="box4"></div>
+        </div> */}
         <h2>-----A One stop solution-----</h2>
         <p>
-          An Idea is the first step towards the success and we provide an all in
+          An Idea is the first step towards the success and we provide an all in{" "}
+          <br />
           one support to grow your Idea at its maximal height.
         </p>
+        <div className="icon-5">
+          <div className="icon-5img">
+            <img src="Group 15156.png" alt="" />
+            <h3 className="icon5-text">Creation</h3>
+          </div>
+          <div className="icon-5img">
+            <img src="Group 15157.png" alt="" />
+            <h3 className="icon5-text">Development</h3>
+          </div>
+          <div className="icon-5img">
+            <img src="Group 15158.png" alt="" />
+            <h3 className="icon5-text">Marketing</h3>
+          </div>
+          <div className="icon-5img">
+            <img src="Group 15159.png" alt="" />
+            <h3 className="icon5-text">Management</h3>
+          </div>
+          <div className="icon-5img">
+            <img src="Group 15160.png" alt="" />
+            <h3 className="icon5-text">Optimization</h3>
+          </div>
+        </div>
       </div>
       {/* xyxxxx*/}
       <div className="ourwork-success">
