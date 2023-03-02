@@ -1,4 +1,5 @@
 import React from "react";
+import Accordion from "./Accordion";
 
 const Ourwork = () => {
   return (
@@ -9,15 +10,8 @@ const Ourwork = () => {
           An Idea is the first step towards the success and we provide an all in
           one support to grow your Idea at its maximal height.
         </p>
-        {/* <div className="boxes">
-          <div className="box1">
-            <h2>Mehandi Hub</h2>
-            <hr />
-          </div>
-          <div className="box2"></div>
-          <div className="box3"></div>
-          <div className="box4"></div>
-        </div> */}
+        <Accordion />
+
         <h2>-----A One stop solution-----</h2>
         <p>
           An Idea is the first step towards the success and we provide an all in{" "}
@@ -90,8 +84,7 @@ const Ourwork = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>);
 };
 
 export default Ourwork;
