@@ -1,11 +1,24 @@
-import React from "react";
+import React,{useEffect,useRef} from "react";
+import lottie from "lottie-web";
+
 
 const Header = () => {
+    const container =useRef(null)
+    useEffect(()=>{
+      lottie.loadAnimation({
+        logo:container.current,
+        renderer:'svg',
+        loop:true,
+        autoplay:true,
+        animationData:require('../../../lottie_files/creation.json')
+      })
+    })
+  
   return (
     <div className="Header">
      <header>
         <div className="navbar" id="navbar">
-            <div className="logo"><a href="index.html" className="logo" id="logo">
+            <div className="logo" ref={logo}><a href="index.html" className="logo" id="logo">
                 </a></div>
             <div className="btn_box" id="btn_box">
                 <button className="menu" id="menu">Menu</button>
