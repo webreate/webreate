@@ -1,0 +1,279 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webreate</title>
+    <!-- SCROLLING EFFECT -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="imgs/blog1-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="CSS/admin.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WT5Z30NLHX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WT5Z30NLHX');
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1884023165303211');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1884023165303211&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="background-color"></div>
+        <div class="navbar">
+            <div class="logo" id="logo"><a href="index.html" class="logo" id="logo">
+                </a></div>
+            <div class="admin-bar">
+                <h1>ADMIN</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left" id="left">
+
+                <div class="login">
+                    <i class='bx bx-user'></i>
+                    <form action="">
+                        <div class="first-input main-input">
+                            <i class='bx bxs-user'></i>
+                            <div class="password-container">
+                                <input type="text" placeholder="USER ID" class="input">
+                            </div>
+                        </div>
+                        <div class="second-input main-input">
+                            <i class='bx bxs-lock'></i>
+                            <div class="password-container">
+                                <input type="password" placeholder="PASSWORD" class="input" id="password">
+                                <i class='bx bxs-hide' id="eye"></i>
+                            </div>
+                        </div>
+                        <input type="button" value="LOG IN" id="btns">
+                    </form>
+                </div>
+            </div>
+            <div class="bar" id="bar">
+                <div class="dark-line"></div>
+                <ul>
+                    <li class="active li" id="newsletter">NEWSLETTER</li>
+                    <li class="li" id="appointment">APPOINTMENT</li>
+                </ul>
+            </div>
+        </div>
+        <div class="list" id="list">
+            <div class="list-box">
+
+                <div class="information">
+                    <img src="imgs/list-icon1.png" alt="">
+                    <span>S.nos</span>
+                    <ul class="informatio-ul">
+                        <li class="information-li">Name</li>
+                        <li class="information-li">Email</li>
+                        <li class="information-li">Mobile Number</li>
+                    </ul>
+                </div>
+                <div class="listed">
+
+                    <ul class="listed-ul">
+                        <div class="list-div" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="900">
+                            <img src="imgs/list-icon.png" alt="">
+                            <span id="unique-id">1</span>
+                            <li class="info">
+                                <p class="name  details">Shivam Dhiman</p>
+                                <p class="email details">shiv240898@gmail.com</p>
+                                <p class="number details">9027385670</p>
+                            </li>
+                        </div>
+                        <div class="list-div" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="900">
+                            <img src="imgs/list-icon.png" alt="">
+                            <span id="unique-id">2</span>
+                            <li class="info">
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="appoinment-box" id="appointment-box">
+            <div class="list-box">
+                <div class="information">
+                    <img src="imgs/list-icon1.png" alt="">
+                    <span>S.nos</span>
+                    <ul class="informatio-ul">
+                        <li class="information-li">Date</li>
+                        <li class="information-li">Name</li>
+                        <li class="information-li">Mobile Number</li>
+                        <li class="information-li">Message</li>
+                    </ul>
+                </div>
+                <div class="listed">
+
+                    <ul class="listed-ul">
+                        <div class="list-div list-div2" id="list1" data-aos="zoom-in" data-aos-delay="400"
+                            data-aos-duration="900" id="list-div2">
+                            <img src="imgs/list-icon.png" alt="">
+                            <span id="unique-id">1</span>
+                            <li class="info">
+                                <!-- <p class="date  details1">24/08/98</p>
+                                <p class="name details1">Shivam Dhiman</p>
+                                <p class="number details1">9027385670</p>
+                                <p class="msg details1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span id="points">...</span>
+                                    <span id="moreText">
+                                    Voluptate nesciunt sunt expedita
+                                     reprehenderit aliquam hic pariatur ipsa ea officia,
+                                        dolore enim ad quia fugiat quidem deserunt voluptatibus eum sapiente
+                                        voluptates!</span>
+                                </p> -->
+                            </li>
+                            <div class="arrow" id="icon1">
+                                <i class='bx bxs-down-arrow icons'  onclick="toggleText()"></i>
+                            </div>
+                        </div>
+                        <div class="list-div list-div2" id="list2" data-aos="zoom-in" data-aos-delay="400"
+                            data-aos-duration="900" id="list-div2">
+                            <img src="imgs/list-icon.png" alt="">
+                            <span id="unique-id">2</span>
+                            <li class="info">
+                            </li>
+                            <div class="arrow" id="icon2">
+                                <i class='bx bxs-down-arrow icons' onclick="toggleText()"></i>
+                            </div>
+                        </div>
+                        <div class="list-div list-div2" id="list3" data-aos="zoom-in" data-aos-delay="400"
+                            data-aos-duration="900" id="list-div2">
+                            <img src="imgs/list-icon.png" alt="">
+                            <span id="unique-id">3</span>
+                            <li class="info">
+                            </li>
+                            <div class="arrow" id="icon3">
+                                <i class='bx bxs-down-arrow icons'  onclick="toggleText()"></i>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCROLLING EFFECT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script>
+        var logo = document.getElementById('logo')
+        var logo = bodymovin.loadAnimation({
+          container: logo, // required
+          path: '../lottiefiles/logo.json',
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          name: "Demo Animation",
+        });
+        AOS.init({
+            offset: 100,
+            once: false,
+            mirror: false,
+        });
+
+        var btn = document.getElementById("btns")
+        var bar = document.getElementById("bar")
+        var list = document.getElementById("list")
+        var left = document.getElementById("left")
+        var icon1 = document.getElementById("icon1")
+        var icon2 = document.getElementById("icon2")
+        var icon3 = document.getElementById("icon3")
+        var list1 = document.getElementById("list1")
+        var list2 = document.getElementById("list2")
+        var list3 = document.getElementById("list3")
+        var appoinment = document.getElementById("appointment")
+        var appoinmentBox = document.getElementById("appointment-box")
+        var newsletter = document.getElementById("newsletter")
+        var icons = document.querySelectorAll(".icons")
+        var listdiv2 = document.querySelectorAll(".list-div2")
+
+
+        btn.addEventListener("click", () => {
+            bar.style.top = "0"
+            list.style.top = "130px"
+            left.style.display = "none"
+        })
+        const passwordInput = document.querySelector("#password")
+        const eye = document.querySelector("#eye")
+        eye.addEventListener("click", function () {
+            console.log("hello");
+            this.classList.toggle("bxs-show")
+            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password"
+            passwordInput.setAttribute("type", type)
+        })
+        $('.li').on("click", function () {
+            $('.active').not(this).removeClass('active');
+            $(this).toggleClass('active');
+        })
+        newsletter.addEventListener("click", () => {
+            appoinmentBox.style.top = "-400px"
+            list.style.top = "130px"
+            list.style.display = "flex"
+        })
+        appoinment.addEventListener("click", () => {
+            list.style.top = "-400px"
+            appoinmentBox.style.display = "flex"
+            appoinmentBox.style.top = "130px"
+        })
+        icon1.addEventListener("click", () => {
+            list1.classList.toggle("heights")
+        })
+        icon2.addEventListener("click", () => {
+            list2.classList.toggle("heights")
+        })
+        icon3.addEventListener("click", () => {
+            list3.classList.toggle("heights")
+        })
+        function toggleText() {
+            var points =
+                document.getElementById("points");
+
+            var showMoreText =
+                document.getElementById("moreText");
+
+            var buttonText =
+                document.getElementById("icon1");
+            if (points.style.display === "none") {
+                showMoreText.style.display = "none";
+                points.style.display = "inline";
+            }
+            else {
+                showMoreText.style.display = "inline";
+                points.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
