@@ -1,6 +1,53 @@
-import React from "react";
-
+import React, { useEffect, useRef } from "react";
+import lottie from "lottie-web";
 const Ourservice = () => {
+  const container = useRef(null);
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: container.current,
+      container: document.querySelector("#lottie_2"),
+
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      controls: true,
+      reset: true,
+      animationData: require('../../../lottie_files/creation.json')
+    })
+    lottie.loadAnimation({
+      container: container.current,
+
+      container: document.querySelector("#lottie_1"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/development.json')
+    })
+    
+    lottie.loadAnimation({
+      container: document.querySelector("#lottie_3"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/marketing.json')
+    })
+    lottie.loadAnimation({
+      container: document.querySelector("#lottie_4"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/managment.json')
+    })
+    lottie.loadAnimation({
+      container: document.querySelector("#lottie_5"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/optimisation.json')
+    })
+    return () => lottie.destroy();
+  }, [])
   return (
     <div className="ourservice">
       <div className="ourServiceContent">
@@ -14,19 +61,19 @@ const Ourservice = () => {
         <div className="service-section">
           <div className="icons-5">
             <div className="icons-5img">
-              <img src="Group 15156.png" alt="" />
+              <div className=" lottie" id="lottie_2" style={{ width: 80, height: 80 }} ></div>
             </div>
             <div className="icons-5img">
-              <img src="Group 15158.png" alt="" />
+            <div className="lottie1 lottie" id="lottie_1" style={{ width: 80, height: 80 }}></div>
             </div>
             <div className="icons-5img">
-              <img src="Group 15157.png" alt="" />
+            <div className="lottie1 lottie" id="lottie_3" style={{ width: 80, height: 80 }}></div>
             </div>
             <div className="icons-5img">
-              <img src="Group 15159.png" alt="" />
+            <div className="lottie1 lottie" id="lottie_4" style={{ width: 80, height: 80 }}></div>
             </div>
             <div className="icons-5img">
-              <img src="Group 15160.png" alt="" />
+            <div className="lottie1 lottie" id="lottie_5" style={{ width: 80, height: 80 }}></div>
             </div>
           </div>
           <p className="ourservice-p">Webreate- A One stop solution.</p>

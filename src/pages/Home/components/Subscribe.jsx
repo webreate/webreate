@@ -21,6 +21,8 @@ const Subscribe = () => {
             <h3>Subscribe Our</h3>
             <h2>Newsletter</h2>
           </div>
+          <h2 className="joinus-line">JOIN US!</h2>
+
 
           <form>
             <div className="subscribe-formtype">

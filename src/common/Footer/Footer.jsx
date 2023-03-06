@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="socialmedia">
             <img className="facebook" src="fb.png" alt="fb" />
           </div>
-          <div className="socialmedia">
+          {/* <div className="socialmedia">
             <img className="whatsapp" src="whatsapp.png" alt="whatsapp" />
           </div>
           <div className="socialmedia">
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           <div className="socialmedia">
             <img className="twitter" src="twitter.png" alt="twitter" />
-          </div>
+          </div> */}
         </div>
         <h2>COMPANY</h2>
         <p>About US | Privacy Policy</p>

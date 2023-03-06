@@ -1,6 +1,54 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import Accordion from "./Accordion";
+import lottie from "lottie-web";
+
 
 const Ourwork = () => {
+  const container = useRef(null);
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: document.querySelector("#lottie2"),
+
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      controls: true,
+      animationData: require('../../../lottie_files/creation.json')
+    })
+    lottie.loadAnimation({
+      container: document.querySelector("#lottie1"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/development.json')
+    })
+
+    lottie.loadAnimation({
+      container: document.querySelector("#lottie3"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/marketing.json')
+    })
+    lottie.loadAnimation({
+      container: document.querySelector("#lottie4"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/managment.json')
+    })
+    lottie.loadAnimation({
+      container: document.querySelector("#lottie5"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/optimisation.json')
+    })
+    return () => lottie.destroy();
+
+  }, [])
+
   return (
     <div className="ourwork-section">
       <div className="ourwork">
@@ -9,15 +57,8 @@ const Ourwork = () => {
           An Idea is the first step towards the success and we provide an all in
           one support to grow your Idea at its maximal height.
         </p>
-        {/* <div className="boxes">
-          <div className="box1">
-            <h2>Mehandi Hub</h2>
-            <hr />
-          </div>
-          <div className="box2"></div>
-          <div className="box3"></div>
-          <div className="box4"></div>
-        </div> */}
+        <Accordion />
+
         <h2>-----A One stop solution-----</h2>
         <p>
           An Idea is the first step towards the success and we provide an all in{" "}
@@ -26,24 +67,44 @@ const Ourwork = () => {
         </p>
         <div className="icon-5">
           <div className="icon-5img">
-            <img src="Group 15156.png" alt="" />
-            <h3 className="icon5-text">Creation</h3>
+            <a href="services/creation.html" data-aos="flip-left" data-aos-delay="500" data-aos-duration="600">
+              <div className="info_box" id="info2" data-aos="fade-in" data-aos-delay="600" data-aos-duration="600">
+                <div className=" lottie" id="lottie2" style={{ width: 100, height: 100 }} ></div>
+                <p className="icon5-text">Creation</p>
+              </div>
+            </a>
           </div>
           <div className="icon-5img">
-            <img src="Group 15157.png" alt="" />
-            <h3 className="icon5-text">Development</h3>
+            <a href="services/development.html" data-aos="flip-left" data-aos-delay="300" data-aos-duration="600">
+              <div className="info_box" id="info1" data-aos="fade-in" data-aos-delay="400" data-aos-duration="600">
+                <div className="lottie1 lottie" id="lottie1" style={{ width: 100, height: 100 }}></div>
+                <p className="icon5-text">Development</p>
+              </div>
+            </a>
           </div>
           <div className="icon-5img">
-            <img src="Group 15158.png" alt="" />
-            <h3 className="icon5-text">Marketing</h3>
+            <a href="services/marketing.html" data-aos="flip-left" data-aos-delay="700" data-aos-duration="600">
+              <div className="info_box" id="info3" data-aos="fade-in" data-aos-delay="800" data-aos-duration="600">
+                <div className="lottie3 lottie" id="lottie3" style={{ width: 100, height: 100 }} ></div>
+                <p className="icon5-text">Marketing</p>
+              </div>
+            </a>
           </div>
           <div className="icon-5img">
-            <img src="Group 15159.png" alt="" />
-            <h3 className="icon5-text">Management</h3>
+            <a href="services/management.html" data-aos="flip-left" data-aos-delay="900" data-aos-duration="600">
+              <div className="info_box" id="info4" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="600">
+                <div className="lottie4 lottie" id="lottie4" style={{ width: 100, height: 100 }}></div>
+                <p className="icon5-text" >Management</p>
+              </div>
+            </a>
           </div>
           <div className="icon-5img">
-            <img src="Group 15160.png" alt="" />
-            <h3 className="icon5-text">Optimization</h3>
+            <a href="services/optimisation.html" data-aos="flip-left" data-aos-delay="1100" data-aos-duration="600">
+              <div className="info_box" id="info5" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="600">
+                <div className="lottie5 lottie" id="lottie5" style={{ width: 100, height: 100 }}></div>
+                <p className="icon5-text">Optimization</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -90,8 +151,10 @@ const Ourwork = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>);
 };
 
 export default Ourwork;
+
+
+// onMouseEnter={() => lottie.play()}  onMouseLeave={() => lottie.pause()}
