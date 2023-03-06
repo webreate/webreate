@@ -16,14 +16,21 @@ import Header from "../../../common/Header/Header";
 
 const Home = () => {
   useEffect(() => {
-    const instance = lottie.loadAnimation({
+     lottie.loadAnimation({
       container: document.querySelector("#logo"),
       renderer: 'svg',
       loop: true,
       autoplay: true,
       animationData: require('../../../lottie_files/logo.json')
     })
-    return () => instance.destroy();
+     lottie.loadAnimation({
+      container: document.querySelector("#logo1"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: require('../../../lottie_files/logo.json')
+    })
+    return () => lottie.destroy();
 
 
   },[])

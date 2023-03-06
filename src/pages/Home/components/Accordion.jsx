@@ -1,7 +1,8 @@
 import React from "react";
 import 'boxicons';
-// import service from "./images/service.png"
-// import {images} from '.././components/images'
+import tick from "./images/tick.png"
+import service from "./images/service.png"
+import icon from "../../Home/components/icons/2x/social media managment@2x.png"
 
 const Accordion = () => {
     return (
@@ -33,34 +34,35 @@ const Accordion = () => {
                     <div className="circle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="900">
                         <div className="circles">
                             <div className="imgs">
-                                <img src={"service"} alt="" />
+                                <img src={service} alt="" />
                             </div>
                             <h4>Web Development</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/social media managment@2x.png" alt="" />
+                            <img src={service} alt="" />
+                                {/* <img src="icons/2x/social media managment@2x.png" alt="" /> */}
                             </div>
                             <h4>Social Media <br /> Management</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/content marketing@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Content Marketing</h4>
                         </div>
                     </div>
                     <div className="achievement">
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                            <img src={tick} alt="" />
                             <p>Website traffic increased by 50% from social media.</p>
                         </div>
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>No User Bouncing observed till now.</p>
                         </div>
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>Best and optimised Social media presence</p>
                         </div>
                     </div>
@@ -98,40 +100,40 @@ const Accordion = () => {
                     <div className="circle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="900">
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/web development@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Web Development</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/social media managment@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Social Media <br /> Management</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/social media marketing@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Social Media <br /> Marketing</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/app development@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>App Development</h4>
                         </div>
                     </div>
                     <div className="achievement">
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>Best assets for the app and web</p>
                         </div>
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>Optimised app development within 4 months </p>
                         </div>
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>Best brand presentations and pitch for the client.</p>
                         </div>
                     </div>
@@ -167,19 +169,19 @@ const Accordion = () => {
                     <div className="circle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="900">
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/web development@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Web Development</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/social media managment@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Social Media <br /> Management</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/social media marketing@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Social Media Marketing</h4>
                         </div>
@@ -192,15 +194,15 @@ const Accordion = () => {
                     </div>
                     <div className="achievement">
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>Sales increased by 20% from the second month.</p>
                         </div>
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>Store engagement time increased by 12%.</p>
                         </div>
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>Bouncing rate decreased by 40%.</p>
                         </div>
                     </div>
@@ -236,40 +238,40 @@ const Accordion = () => {
                     <div className="circle">
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/web development@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Web Development</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/social media managment@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Social Media <br /> Management</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/social media marketing@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Social Media Marketing</h4>
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/content marketing@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Content Marketing</h4>
                         </div>
                     </div>
                     <div className="achievement">
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>CPI decreased by $1.2</p>
                         </div>
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>More than 10k downloads through Social media</p>
                         </div>
                         <div className="inside_achieve">
-                            <img src="imgs/tick.png" alt="" />
+                        <img src={tick} alt="" />
                             <p>ROI on paid media increased from the Second month.</p>
                         </div>
                     </div>

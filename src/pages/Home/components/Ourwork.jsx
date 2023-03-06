@@ -1,52 +1,54 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Accordion from "./Accordion";
 import lottie from "lottie-web";
 
 
 const Ourwork = () => {
+  const container = useRef(null);
+
   useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector("#lottie2"),
 
       renderer: 'svg',
       loop: true,
-      autoplay: true,
+      autoplay: false,
+      controls: true,
       animationData: require('../../../lottie_files/creation.json')
     })
-
     lottie.loadAnimation({
       container: document.querySelector("#lottie1"),
       renderer: 'svg',
       loop: true,
-      autoplay: true,
+      autoplay: false,
       animationData: require('../../../lottie_files/development.json')
     })
 
     lottie.loadAnimation({
-     container: document.querySelector("#lottie3"),
-     renderer: 'svg',
-     loop: true,
-     autoplay: true,
-     animationData: require('../../../lottie_files/marketing.json')
-   })
+      container: document.querySelector("#lottie3"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/marketing.json')
+    })
     lottie.loadAnimation({
-     container: document.querySelector("#lottie4"),
-     renderer: 'svg',
-     loop: true,
-     autoplay: true,
-     animationData: require('../../../lottie_files/managment.json')
-   })
-   const instance = lottie.loadAnimation({
-     container: document.querySelector("#lottie5"),
-     renderer: 'svg',
-     loop: true,
-     autoplay: true,
-     animationData: require('../../../lottie_files/optimisation.json')
-   })
+      container: document.querySelector("#lottie4"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/managment.json')
+    })
+    lottie.loadAnimation({
+      container: document.querySelector("#lottie5"),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      animationData: require('../../../lottie_files/optimisation.json')
+    })
     return () => lottie.destroy();
 
   }, [])
- 
+
   return (
     <div className="ourwork-section">
       <div className="ourwork">
@@ -67,7 +69,7 @@ const Ourwork = () => {
           <div className="icon-5img">
             <a href="services/creation.html" data-aos="flip-left" data-aos-delay="500" data-aos-duration="600">
               <div className="info_box" id="info2" data-aos="fade-in" data-aos-delay="600" data-aos-duration="600">
-                <div className=" lottie" id="lottie2" style={{ width: 100, height: 100 }}></div>
+                <div className=" lottie" id="lottie2" style={{ width: 100, height: 100 }} ></div>
                 <p className="icon5-text">Creation</p>
               </div>
             </a>
