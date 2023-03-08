@@ -1,9 +1,11 @@
 import React from "react";
+import logo3 from "./images/logo3.png"
 
 const Subscribe = () => {
   return (
     <div className="subscribe">
       <div className="subscribe-main">
+        <div className="subscribe-text">
         <h1>
           FOR LATEST TIPS <br /> AND TRICKS <br /> JOINS US.
         </h1>
@@ -12,6 +14,10 @@ const Subscribe = () => {
           design, think and write. We are here to help <br /> you out through
           every hurdle.
         </p>
+        </div>
+        <div className="subscribe-img">
+          <img src={logo3} alt="" srcset="" />
+        </div>
       </div>
 
       <div className="subscribe-form">

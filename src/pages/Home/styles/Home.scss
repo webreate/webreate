@@ -211,12 +211,13 @@
   }
 }
 .hero-section {
-  width: 100%;
+  // width: 100%;
   display: flex;
   // height: 90vh;
   align-items: center;
   background-color: $bg-black;
   color: $white;
+  min-height: 80vh;
  
 }
 .hero-content {
@@ -573,6 +574,9 @@ h3 {
     font-size: 20px;
   }
 }
+.subscribe-img{
+  display: none;
+}
 .subscribe-form {
   width: 40%;
   padding: 20px 20px;
@@ -790,10 +794,10 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // padding: 50px 0 0 0px;
+  padding: 60px 0 0 15px;
   position: relative;
   background-color: #000;
-  margin-top: 20px;
+  // margin-top: 20px;
 }
 .main_right h2{
   // font-size: 1.9rem;
@@ -823,7 +827,7 @@ textarea {
   overflow: hidden;
   // top: 380px;
   z-index: 0;
-  top: 230px;
+  // top: 230px;
 }
 .main_right form {
   z-index: 2;
@@ -906,7 +910,8 @@ margin-top: 50px;
 .accordion {
   // width: 85%;
   background-color: #000;
-  height: 512px;
+  height: 600px;
+  // min-height: 80vh;
   display: flex;
   box-shadow: 0px 0px 10px rgb(255 255 255 / 47%);
   flex-direction: row;
@@ -930,22 +935,22 @@ margin-top: 50px;
   align-items: center;
   // background-image: url("../components/images/technology-communication-icons-symbols-concept.png");
 }
-.a1{
-  position: relative;
-  height: 100%;
-  flex: 1;
-  background-position: left;
-  background-size: cover;
-  transition: .4s all linear;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.47);
-  background-color: #000;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 3;
-  background-image: url("../components/images/technology-communication-icons-symbols-concept.png");
-}
+// .a1{
+//   position: relative;
+//   height: 100%;
+//   flex: 1;
+//   background-position: left;
+//   background-size: cover;
+//   transition: .4s all linear;
+//   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.47);
+//   background-color: #000;
+//   z-index: 3;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex: 3;
+//   background-image: url("../components/images/technology-communication-icons-symbols-concept.png");
+// }
 
 .box img {
   height: 90%;
@@ -1122,6 +1127,7 @@ b {
   bottom: 0;
   font-size: .9rem;
   font-family: Arial, Helvetica, sans-serif;
+  left: 20px;
 }
 .imgs {
   width: 88px;
@@ -1162,6 +1168,7 @@ b {
   display: flex;
   justify-content: center;
   padding: 19px;
+  margin-bottom: 20px;
 }
 
 .accordion button {
@@ -1329,4 +1336,394 @@ b {
   .imgs {
       height: 44px;
   }
+}
+
+
+
+@media (min-width:1200px) {
+	.main_right {
+
+
+		form {
+			width: 90%;
+		}
+	}
+	.attach-line {
+		font-size: 6.5rem !important;
+	}
+	.main_left {
+		h2 {
+			font-size: 1.5rem;
+		}
+	}
+	.mainleft-typing {
+		img {
+			height: 64px;
+		}
+	}
+	.scroller {
+		>div {
+			font-size: 5.2rem;
+		}
+	}
+}
+@media (max-width:1013px) {
+	.main_left {
+		gap: 20px;
+		h2 {
+			font-size: 1.2rem;
+		}
+		h3 {
+			font-size: 2rem;
+		}
+	}
+	.mainleft-typing {
+		img {
+			// height: 47px;
+		}
+		height: 7%;
+	}
+	.scroller {
+		>div {
+			font-size: 5rem;
+			// height: 4.4rem;
+			&:nth-child(1) {
+				transform: rotateX(360deg) translateZ(48px);
+			}
+			&:nth-child(2) {
+				transform: rotateX(288deg) translateZ(48px);
+			}
+			&:nth-child(3) {
+				transform: rotateX(216deg) translateZ(48px);
+			}
+			&:nth-child(4) {
+				transform: rotateX(144deg) translateZ(48px);
+			}
+			&:nth-child(5) {
+				transform: rotateX(72deg) translateZ(48px);
+			}
+		}
+	}
+	.scroller_box {
+		height: 5rem;
+	}
+	.main-btn {
+		a {
+			padding: 6px 24px;
+			font-size: 1.1rem;
+		}
+	}
+	// .main_right {
+	// 	width: calc(100vw - 43%);
+
+	// 	h2 {
+	// 		font-size: 1.7rem;
+	// 	}
+	// 	h3 {
+	// 		font-size: 1rem;
+	// 	}
+	// }
+	.attach-line {
+		right: -183px;
+		font-size: 6rem !important;
+		top: 349px;
+	}
+}
+@media (max-width:1000px) {
+	#form_btn {
+		font-size: 1.4vw;
+		width: 31%;
+	}
+}
+@media (max-width:850px) {
+  .main_right{
+    display: none;
+
+  }
+	.main_left {
+		h2 {
+			font-size: 2rem;
+			// font-size: 1.1rem;
+		}
+		width: 82%;
+	}
+	.attach-line {
+		right: -148px;
+		font-size: 5rem !important;
+		top: 388px;
+	}
+	#form_btn {
+		width: 37%;
+	}
+}
+@media (max-width:760px) {
+	.main_left {
+		h2 {
+			font-size: 1rem;
+			word-wrap: break-word;
+		}
+		h3 {
+			font-size: .9rem;
+		}
+	}
+	.mainleft-typing {
+		img {
+			height: 35px;
+		}
+	}
+	.scroller {
+		>div {
+			padding-left: 5px;
+			font-size: 3rem;
+			height: 3.8rem;
+			&:nth-child(1) {
+				transform: rotateX(360deg) translateZ(41px);
+			}
+			&:nth-child(2) {
+				transform: rotateX(288deg) translateZ(41px);
+			}
+			&:nth-child(3) {
+				transform: rotateX(216deg) translateZ(41px);
+			}
+			&:nth-child(4) {
+				transform: rotateX(144deg) translateZ(41px);
+			}
+			&:nth-child(5) {
+				transform: rotateX(72deg) translateZ(41px);
+			}
+		}
+	}
+	.main_right {
+		width: calc(100vw - 39%);
+		h2 {
+			font-size: 1.6rem;
+		}
+		h1 {
+			font-size: 2.1rem;
+		}
+		h3 {
+			font-size: .9rem;
+		}
+		&::placeholder {
+			font-size: 1rem;
+		}
+	}
+	.attach-line {
+		right: -143px;
+		font-size: 4.8rem !important;
+		top: 374px;
+	}
+	#form_btn {
+		font-size: 1.7vw;
+		width: 42%;
+	}
+	.main-btn {
+		a {
+			padding: 6px 20px;
+			font-size: 1rem;
+		}
+	}
+}
+@media (max-width:650px) {
+	.hero-section {
+		align-items: center;
+		flex-direction: column;
+		padding-left: 0;
+		padding-top: 9%;
+		gap: 10px;
+		min-height: 50vh;
+	}
+	.main_right {
+		// padding: 10px;
+		// width: calc(100vw - 8%);
+		// align-items: flex-start;
+    display: none;
+
+		form {
+			width: 98%;
+		}
+	}
+	.main_left {
+		width: 98%;
+		padding-left: 20px;
+	}
+	.attach-line {
+		right: -143px;
+		font-size: 4.8rem !important;
+		top: 225px;
+	}
+}
+@media (max-width:480px) {
+  .main_right{
+    display: none;
+
+  }
+	.main_left {
+		h2 {
+			font-size: .9rem;
+		}
+		h3 {
+			font-size: .7rem;
+		}
+	}
+	.main-btn {
+		a {
+			padding: 6px 20px;
+			font-size: .8rem;
+			border: 1.5px solid var(--text-color);
+		}
+	}
+}
+@media (max-width:420px) {
+	.mainleft-typing {
+		img {
+			height: 27px;
+		}
+	}
+	.scroller {
+		>div {
+			padding-left: 5px;
+			font-size: 2.2rem;
+			height: 3.2rem;
+			&:nth-child(1) {
+				transform: rotateX(360deg) translateZ(34px);
+			}
+			&:nth-child(2) {
+				transform: rotateX(288deg) translateZ(34px);
+			}
+			&:nth-child(3) {
+				transform: rotateX(216deg) translateZ(34px);
+			}
+			&:nth-child(4) {
+				transform: rotateX(144deg) translateZ(34px);
+			}
+			&:nth-child(5) {
+				transform: rotateX(72deg) translateZ(34px);
+			}
+		}
+	}
+	.main_left {
+		gap: 16px;
+	}
+	.scroller_box {
+		height: 2.4rem;
+	}
+	.main_right {
+    display: none;
+
+		h2 {
+			font-size: 1.4rem;
+		}
+		h1 {
+			font-size: 1.8rem;
+		}
+		h3 {
+			font-size: .8rem;
+		}
+		&::placeholder {
+			font-size: .8rem;
+		}
+		form {
+			gap: 15px;
+		}
+	}
+	input {
+		padding: 12px;
+	}
+	select {
+		padding: 12px;
+	}
+	textarea {
+		padding: 12px;
+	}
+	#form_btn {
+		font-size: 4vw;
+		width: 42%;
+	}
+}
+
+
+/*services */
+
+@media (max-width:1120px) {
+  .subscribe{
+    display: flex;
+    flex-direction: column;
+    .subscribe-main {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .subscribe-form {
+    width: auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.subscribe-main p {
+  // color: var(--white);
+  font-size: 15px;
+}
+.subscribe-img{
+  display: block;
+  width: 30%;
+}
+}
+@media (max-width:1120px) {
+  .team{
+    display: flex;
+    flex-direction: column-reverse;
+
+    .ourteam-txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: auto; 
+    }
+    .teamimg {
+      height: 300px;
+    }
+    .ourteam-txt h3{
+      padding: 10px;
+    }
+    .ourteam-txt p{
+      padding: 20px;
+    }
+  }
+}
+@media (max-width:1120px) {
+  .oursales-team{
+  padding: 20px;
+  display: block;
+  }
+  .teamsales{
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    background-color: $bg-black;
+    padding: 0;
+    margin: 0;
+  }
+  .teamsales-img{
+    width: auto;
+  }
+  .teamsales-text {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10 black;
+    box-shadow: 0 0 10px #707070;
+    padding: 35px;
+}
+.call {
+  width: 93%;
+  /* display: flex; */
+  /* margin-top: 30px; */
+  margin-left: 50px;
+  /* justify-content: flex-end; */
+}
 }
