@@ -3,6 +3,12 @@ import 'boxicons';
 import tick from "./images/tick.png"
 import service from "./images/service.png"
 import icon from "../../Home/components/icons/2x/social media managment@2x.png"
+import logo1 from "./images/logo-1.png"
+import logo2 from "./images/logo-2.png"
+import logo3 from "./images/logo-3.png"
+import logo4 from "./images/logo-4.png"
+
+
 
 const Accordion = () => {
     return (
@@ -11,7 +17,7 @@ const Accordion = () => {
             {/* BOX 1 */}
             <div className="box a1 flexbox">
                 <div className="acrro_img" id="image2">
-                    <img src="imgs/logo-1.png" alt="" />
+                    <img src={logo1} alt="" />
                 </div>
                 <div className="opacity"></div>
                 <div className="text_show">
@@ -79,7 +85,7 @@ const Accordion = () => {
             <div className="box a2">
                 <div className="acrro_img" id="image2">
 
-                    <img src="imgs/logo-2.png" alt="" />
+                    <img src={logo2} alt="" />
                 </div>
                 <div className="opacity"></div>
                 <div className="text_show">
@@ -91,7 +97,7 @@ const Accordion = () => {
                 <div className="text">
                     <h1>RIYO</h1>
                     <p>
-                        <b>ABOUT THIS PROJECT:</b><br />
+                        {/* <b>ABOUT THIS PROJECT:</b><br /> */}
 
                         RIYO INDIA is an Highway solution for the Indian Highway the project was a raw idea and all the
                         branding and development was done by Webreate.
@@ -148,7 +154,7 @@ const Accordion = () => {
             {/* <!-- BOX 3 --> */}
             <div className="box a3">
                 <div className="acrro_img" id="image2">
-                    <img src="imgs/logo-3.png" alt="" />
+                    <img src={logo3} alt="" />
                 </div>
                 <div className="opacity"></div>
                 <div className="text_show">
@@ -160,7 +166,7 @@ const Accordion = () => {
                 <div className="text">
                     <h1>Celereate</h1>
                     <p>
-                        <b>ABOUT THIS PROJECT:</b><br />
+                        {/* <b>ABOUT THIS PROJECT:</b><br /> */}
 
                         Celereate is a high profile store in US and the client was more focused for the best website
                         design and a good marketing campaign for the sales.
@@ -187,7 +193,7 @@ const Accordion = () => {
                         </div>
                         <div className="circles">
                             <div className="imgs">
-                                <img src="icons/2x/content marketing@2x.png" alt="" />
+                            <img src={service} alt="" />
                             </div>
                             <h4>Content Marketing</h4>
                         </div>
@@ -217,7 +223,7 @@ const Accordion = () => {
             {/* <!-- BOX 4 --> */}
             <div className="box a4">
                 <div className="acrro_img" id="image2">
-                    <img src="imgs/logo-4.png" alt="" />
+                    <img src={logo4} alt="" />
                 </div>
                 <div className="opacity"></div>
                 <div className="text_show">
@@ -229,19 +235,19 @@ const Accordion = () => {
                 <div className="text">
                     <h1>Easy Camscan</h1>
                     <p>
-                        <b>ABOUT THIS PROJECT:</b><br />
+                        {/* <b>ABOUT THIS PROJECT:</b><br /> */}
 
                         Easy CamScan is a pdf doc scanner designed by flyfott solutions, Client only wants to increase
                         the downloads and some best illustration for the brand awareness and app Installs campaigns.
                     </p>
                     <h2>Service Offered</h2>
                     <div className="circle">
-                        <div className="circles">
+                        {/* <div className="circles">
                             <div className="imgs">
                             <img src={service} alt="" />
                             </div>
                             <h4>Web Development</h4>
-                        </div>
+                        </div> */}
                         <div className="circles">
                             <div className="imgs">
                             <img src={service} alt="" />

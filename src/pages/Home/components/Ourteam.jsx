@@ -69,6 +69,7 @@ const Ourteam = () => {
           <h1>OUR TEAM,</h1>
           <h1>OUR STRENGTH.</h1>
           <h3>Young mind and their passionate soul</h3>
+          <h4>With every Opinion on table, we always ensure the best for you.</h4>
           <p>
             Webreate believes in teamwork and with these crazy passionate
             creators we bring the best form of every service to provide you the

@@ -3,88 +3,89 @@ import lottie from "lottie-web";
 
 
 const Header = () => {
-    useEffect(()=>{
+    useEffect(() => {
 
         window.addEventListener('scroll', () => {
             header.classList.toggle('sticky', window.scrollY > 0)
         })
-    var btn = document.getElementsByClassName('menu')
-    var close = document.getElementById('close')
-    var close1 = document.getElementById('close1')
-    var line = document.getElementById('line')
-    var bar1 = document.getElementById('left-bar')
-    var bar2 = document.getElementById('right-bar')
-    var boxBtn1 = document.getElementById('btn_box')
-    var boxBtn2 = document.getElementById('btn_box1')
-    var navbar = document.querySelector('.full_screen_bar')
-    var header = document.getElementById('navbar')
-    var line = document.getElementById('line')
-    btn.onclick = () => {
-        bar1.classList.add('active_bar')
-        bar2.classList.add('active_bar')
-        navbar.classList.add('active_bar')
-    }
-    close.onclick = () => {
-        btn.style.opacity = "1"
-        bar1.classList.remove('active_bar')
-        bar2.classList.remove('active_bar')
-        navbar.classList.remove('active_bar')
-    }
-    close1.onclick = () => {
-        btn.style.opacity = "1"
-        bar1.classList.remove('active_bar')
-        bar2.classList.remove('active_bar')
-        navbar.classList.remove('active_bar')
-    }
-    
-    window.onscroll = () => {
-        // menu.classList.remove('bx-x')
-        navbar.classList.remove('active_bar')
-    }
-    var btn = document.getElementById('menu')
-var close = document.getElementById('close')
-var close1 = document.getElementById('close1')
-var line = document.getElementById('line')
-var bar1 = document.getElementById('left-bar')
-var bar2 = document.getElementById('right-bar')
-var boxBtn1 = document.getElementById('btn_box')
-var boxBtn2 = document.getElementById('btn_box1')
-var navbar = document.querySelector('.full_screen_bar')
-var header = document.getElementById('navbar')
-var line = document.getElementById('line')
-btn.addEventListener("click", ()=>{
-  bar1.classList.add('active_bar')
-  bar2.classList.add('active_bar')
-  navbar.classList.add('active_bar')
-})
-close.addEventListener("click", ()=>{
-  btn.style.opacity = "1"
-  bar1.classList.remove('active_bar')
-  bar2.classList.remove('active_bar')
-  navbar.classList.remove('active_bar')
-})
-close1.addEventListener("click", ()=>{
-  btn.style.opacity = "1"
-  bar1.classList.remove('active_bar')
-  bar2.classList.remove('active_bar')
-  navbar.classList.remove('active_bar')
-})
+        var btn = document.getElementsByClassName('menu')
+        var close = document.getElementById('close')
+        var close1 = document.getElementById('close1')
+        var line = document.getElementById('line')
+        var bar1 = document.getElementById('left-bar')
+        var bar2 = document.getElementById('right-bar')
+        var boxBtn1 = document.getElementById('btn_box')
+        var boxBtn2 = document.getElementById('btn_box1')
+        var navbar = document.querySelector('.full_screen_bar')
+        var header = document.getElementById('navbar')
+        var line = document.getElementById('line')
+        btn.onclick = () => {
+            bar1.classList.add('active_bar')
+            bar2.classList.add('active_bar')
+            navbar.classList.add('active_bar')
+        }
+        close.onclick = () => {
+            btn.style.opacity = "1"
+            bar1.classList.remove('active_bar')
+            bar2.classList.remove('active_bar')
+            navbar.classList.remove('active_bar')
+        }
+        close1.onclick = () => {
+            btn.style.opacity = "1"
+            bar1.classList.remove('active_bar')
+            bar2.classList.remove('active_bar')
+            navbar.classList.remove('active_bar')
+        }
 
-window.onscroll = () => {
-//   menu.classList.remove('bx-x')
-  navbar.classList.remove('active_bar')
-}
+        window.onscroll = () => {
+            // menu.classList.remove('bx-x')
+            navbar.classList.remove('active_bar')
+        }
+        var btn = document.getElementById('menu')
+        var close = document.getElementById('close')
+        var close1 = document.getElementById('close1')
+        var line = document.getElementById('line')
+        var bar1 = document.getElementById('left-bar')
+        var bar2 = document.getElementById('right-bar')
+        var boxBtn1 = document.getElementById('btn_box')
+        var boxBtn2 = document.getElementById('btn_box1')
+        var navbar = document.querySelector('.full_screen_bar')
+        var header = document.getElementById('navbar')
+        var line = document.getElementById('line')
+        btn.addEventListener("click", () => {
+            bar1.classList.add('active_bar')
+            bar2.classList.add('active_bar')
+            navbar.classList.add('active_bar')
+        })
+        close.addEventListener("click", () => {
+            btn.style.opacity = "1"
+            bar1.classList.remove('active_bar')
+            bar2.classList.remove('active_bar')
+            navbar.classList.remove('active_bar')
+        })
+        close1.addEventListener("click", () => {
+            btn.style.opacity = "1"
+            bar1.classList.remove('active_bar')
+            bar2.classList.remove('active_bar')
+            navbar.classList.remove('active_bar')
+        })
 
-window.addEventListener('scroll', () => {
-  header.classList.toggle('sticky', window.scrollY > 0)
-})
-    },[])
-    
+        window.onscroll = () => {
+            //   menu.classList.remove('bx-x')
+            navbar.classList.remove('active_bar')
+        }
+
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+    }, [])
+
     return (
         <div className="Header">
-            <div className="top-bar">
-        <h3>Digital Marketing Agency - Grow Revenue with Us!!</h3>
-      </div>
+            <div class="fixed_line" id="line">
+                <h1>Digital Marketing Agency - Grow Revenue
+                    with Us!!</h1>
+            </div>
             <header>
                 <div className="navbar" id="navbar">
                     <div className="logo"><a href="index.html" className="logo" id="logo">

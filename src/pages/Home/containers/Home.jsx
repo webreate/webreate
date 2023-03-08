@@ -73,8 +73,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="main_right" data-aos="fade-down" data-aos-delay="100" data-aos-duration="600">
-          <div className="form_box" data-aos="fade-in" data-aos-delay="400" data-aos-duration="600">
+        <div className="main_right">
+          <div className="form_box" >
 
             <h2>Make an</h2>
             <h1>Appointment</h1>
