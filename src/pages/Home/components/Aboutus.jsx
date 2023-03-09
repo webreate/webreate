@@ -1,10 +1,15 @@
 import React from "react";
+// import logo3 from "./images/logo3.png" 
 
 const Aboutus = () => {
   return (
     <div className="Aboutus-main">
       <div className="Aboutus">
+        {/* <img src={logo3} alt="" srcset="" /> */}
+        <div className="aboutus-para">
+
         <p className="About-head">ABOUT US</p>
+        </div>
         <button className="btn-3">KNOW MORE</button>
       </div>
 

@@ -1253,7 +1253,7 @@ b {
       width: 108px;
   }
   .accordion {
-      width: 90%;
+      width: auto;
   }
 }
 @media (max-width:650px) {
@@ -1725,5 +1725,22 @@ b {
   /* margin-top: 30px; */
   margin-left: 50px;
   /* justify-content: flex-end; */
+}
+}
+@media (max-width:1120px){
+  .Aboutus 
+  {
+  width: auto;
+  font-size: medium;
+  .btn-3{
+    font-size: 10px;
+    width: auto;
+  }
+  .aboutus-para{
+    background-image: url("../components/images/logo3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+  }
 }
 }
